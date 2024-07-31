@@ -6,5 +6,5 @@ data:
   app-config-rhdh.yaml: |
     app:
       title: My zany developer hub
-      baseUrl: https://backstage-{{ .Values.instanceName }}-{{ Release.Namespace }}.{{ .Values.global.localClusterDomain }}
+      baseUrl: https://backstage-{{ .Values.instanceName }}-{{ .Release.Namespace }}.{{ .Values.global.localClusterDomain }}
     
