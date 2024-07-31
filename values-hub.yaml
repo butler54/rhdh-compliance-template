@@ -5,16 +5,21 @@ clusterGroup:
   - open-cluster-management
   - vault
   - golang-external-secrets
-  - config-demo
-  - hello-world
+  - rhdh-operator
   subscriptions:
     acm:
       name: advanced-cluster-management
       namespace: open-cluster-management
       channel: release-2.10
       #csv: advanced-cluster-management.v2.6.1
+    rhdh:
+      name: rhdh
+      namespace: rhdh-operator
+      channel: fast
   projects:
   - hub
+  - golang-external-secrets
+  - vault
   # Explicitly mention the cluster-state based overrides we plan to use for this pattern.
   # We can use self-referential variables because the chart calls the tpl function with these variables defined
   sharedValueFiles:
@@ -51,7 +56,7 @@ clusterGroup:
     vault:
       name: vault
       namespace: vault
-      project: datacenter
+      project: vault
       chart: hashicorp-vault
       chartVersion: 0.1.*
 
