@@ -6,6 +6,7 @@ clusterGroup:
   - vault
   - golang-external-secrets
   - rhdh-operator
+  - backstage
   subscriptions:
     acm:
       name: advanced-cluster-management
@@ -19,6 +20,7 @@ clusterGroup:
   - hub
   - golang-external-secrets
   - vault
+  - backstage
   # Explicitly mention the cluster-state based overrides we plan to use for this pattern.
   # We can use self-referential variables because the chart calls the tpl function with these variables defined
   sharedValueFiles:
@@ -65,6 +67,11 @@ clusterGroup:
       project: golang-external-secrets
       chart: golang-external-secrets
       chartVersion: 0.1.*
+    rhdh:
+      name: rhdh-config
+      namespace: backstage
+      project: backstage
+      path: charts/all/rhdh-config
 
   imperative:
     # NOTE: We *must* use lists and not hashes. As hashes lose ordering once parsed by helm
