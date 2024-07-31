@@ -14,7 +14,6 @@ clusterGroup:
       #csv: advanced-cluster-management.v2.6.1
     rhdh:
       name: rhdh
-      namespace: rhdh-operator
       channel: fast
   projects:
   - hub
