@@ -14,5 +14,6 @@ data:
     p, role:default/team-x, policy-entity, read, allow
 {{- range .Values.global.rhdh.admins -}}
     g, user:default/{{ .handle }}, role:default/team-x
+
 {{- end -}}
     
