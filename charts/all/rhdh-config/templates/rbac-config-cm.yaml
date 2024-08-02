@@ -10,4 +10,6 @@ data:
         policies-csv-file: ./rbac-policy.csv
         admin:
           users:
-            - name: user:default/butler54
+{{- range .Values.global.rhdh.admins -}}
+            - name: user:default/{{ .handle }}
+{{- end -}}

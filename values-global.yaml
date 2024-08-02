@@ -4,6 +4,12 @@ global:
     useCSV: false
     syncPolicy: Automatic
     installPlanApproval: Automatic
+  rhdh:
+    admins:
+    - butler54
+    - derekwaters
+    users:
+    - none
 main:
   clusterGroupName: hub
   multiSourceConfig:

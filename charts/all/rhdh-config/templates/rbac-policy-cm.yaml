@@ -12,5 +12,7 @@ data:
     p, role:default/team-x, catalog.location.read, read, allow
     p, role:default/team-x, policy-entity, create, allow
     p, role:default/team-x, policy-entity, read, allow
-
-    g, user:default/butler54, role:default/team-x
+{{- range .Values.global.rhdh.admins -}}
+    g, user:default/{{ .handle }}, role:default/team-x
+{{- end -}}
+    

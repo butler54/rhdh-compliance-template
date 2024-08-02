@@ -9,4 +9,12 @@ appConfigSecret:
 instanceName: dh
 
 auth:
-  allowGuestAccess: True
+  allowGuestAccess: false
+
+
+global:
+  rhdh:
+    admins:
+    - handle: ""
+    users:
+    - handle: ""
