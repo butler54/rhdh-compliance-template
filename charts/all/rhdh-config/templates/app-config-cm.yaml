@@ -34,8 +34,6 @@ data:
       rbac:
         admin:
           users:
-{{- range .Values.global.rhdh.admins -}}
-
+{{- range .Values.global.rhdh.admins }}
             - name: user:default/{{ .handle }}
-
-{{- end -}}
+{{- end }}
