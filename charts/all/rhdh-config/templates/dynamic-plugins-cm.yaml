@@ -1,0 +1,12 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: dynamic-plugins
+data:
+  dynamic-plugins.yaml: |
+    includes:
+      - dynamic-plugins.default.yaml
+    plugins:
+      - package: './dynamic-plugins/dist/janus-idp-backstage-plugin-rbac'
+        disabled: false
+        integrity: sha512-zAKDnvMUv6zwMLx6GIrQDZ+M0D2pcqbZTgG7xqvPJj15j2ZuoJLPmLH7zQM9hdDfKWag0cqoPlP27139klr50Q==

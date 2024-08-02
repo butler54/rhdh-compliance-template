@@ -1,5 +1,5 @@
 global:
-  pattern: rhdh-compliance-pattern
+  pattern: rhdh-validated-pattern
   options:
     useCSV: false
     syncPolicy: Automatic
