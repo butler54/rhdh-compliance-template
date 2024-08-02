@@ -8,6 +8,8 @@ global:
     admins:
     - handle: butler54
     - handle: derekwaters
+    - handle: aspanner
+    - handle: caldeirav
     users:
     - none
 main:
