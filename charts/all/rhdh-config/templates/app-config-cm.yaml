@@ -35,6 +35,7 @@ data:
         admin:
           users:
 {{- range .Values.global.rhdh.admins -}}
+
             - name: user:default/{{ .handle }}
 
 {{- end -}}
