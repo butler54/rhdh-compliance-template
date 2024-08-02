@@ -7,3 +7,6 @@ appConfigSecret:
   key: secret/data/global/rhdh-app-config
 
 instanceName: dh
+
+auth:
+  allowGuestAccess: True
