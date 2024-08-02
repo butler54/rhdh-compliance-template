@@ -6,8 +6,8 @@ global:
     installPlanApproval: Automatic
   rhdh:
     admins:
-    - butler54
-    - derekwaters
+    - handle: butler54
+    - handle: derekwaters
     users:
     - none
 main:
